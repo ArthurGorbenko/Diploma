@@ -1,0 +1,20 @@
+.title
+  absolute bottom
+  padding-top 15
+  padding-bottom 9
+  padding-left 16
+  padding-right 20
+  max-width 100%
+  color #2b0001 rgba(white, .76)
+  font-size 125
+  letter-spacing -2.2
+  font-weight bold
+
+.active
+  .title
+    animation swingin 1s cubic-bezier(.175, .885, .32, 1.275) both
+
+  &.beforeEnd .title
+    opacity 1
+    animation none
+    transform translateY(100%) !important

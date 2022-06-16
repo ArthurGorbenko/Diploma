@@ -1,0 +1,11 @@
+{% if data.title is not empty or data.product.title is not empty %}
+  <div class="title">
+    {{ data.title ? data.title : data.product.title }}
+
+    {% if data.event is not empty %}
+      <div class="event">
+        {{ data.event }}
+      </div>
+    {% endif %}
+  </div>
+{% endif %}

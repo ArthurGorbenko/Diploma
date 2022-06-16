@@ -1,0 +1,10 @@
+{% set type = data.product.media_type %}
+{% set animDuration = type == 'image' and slideshow.speed > 8 ? ['style="animation-duration:', slideshow.speed, 's"']|join : '' %}
+
+<div class="bg media {{ type }}" {{ animDuration }}>
+  {% if type == 'video' %}
+    <video src="/uploads/{{ data.product.media_link }}" loop muted></video>
+  {% elseif type == 'image' %}
+    <img src="/uploads/{{ data.product.media_link }}" />
+  {% endif %}
+</div>

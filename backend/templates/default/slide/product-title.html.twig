@@ -1,0 +1,15 @@
+{% set title = data.title ? data.title : data.product.title %}
+{% if data.options.theme_color %}
+  {% set style = ['background-image:url(/dist/medias/design/d2/theme_color/bg-title-', data.options.theme_color, '.jpg)']|join %}
+{% endif %}
+
+{% if title is not empty %}
+  <div class="title
+      {{ (title|length) > 10 ? ' gt10' }}
+      {{ (title|length) > 20 ? ' gt20' }}
+      {{ (title|length) > 30 ? ' gt30' }}
+      {{ (title|length) > 40 ? ' gt40' }}"
+    style="{{ style }}">
+    {{ title }}
+  </div>
+{% endif %}

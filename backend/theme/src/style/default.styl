@@ -1,0 +1,149 @@
+*
+  background-repeat no-repeat
+  box-sizing border-box
+
+::before
+::after
+  // text-decoration inherit
+  // vertical-align inherit
+
+/*
+ * Text-level semantics
+ */
+/* sub
+sup
+  font-size 75%
+  line-height 0
+  position relative
+  vertical-align baseline
+
+sub
+  bottom -.25em
+
+sup
+  top -.5em
+*/
+::selection
+  // color white color-selection
+  // text-shadow none
+
+/*
+ * forms
+
+button
+input
+optgroup
+select
+textarea
+  color inherit
+  font-family inherit
+  font-size inherit
+  line-height inherit
+
+label
+button
+input[type=file]
+input[type=radio]
+input[type=submit]
+input[type=button]
+input[type=checkbox]
+  cursor pointer
+
+button[disabled]
+input[disabled]
+  cursor default
+
+button
+  background none
+  border none
+
+// remove the outer glow in webkit
+input
+select
+button
+  &:focus
+    outline 0
+
+// change the resize direction on textareas.
+textarea
+  resize vertical
+  font-family inherit
+  font-size inherit / inherit
+*/
+/*
+ * Interactive elements
+ */
+/*
+ * Scripting
+ */
+/*
+ * User interaction
+
+a
+area
+button
+input
+label
+select
+summary
+textarea
+[tabindex]
+  touch-action manipulation
+
+// a, link and area styling, :any-link not supported by ie/edge
+:any-link
+:link
+:visited
+  font-size 14 / 20px
+  letter-spacing .5
+  transition .25s ease
+  transition-property opacity, color, background-color
+  cursor pointer
+  color color-link
+
+  // -webkit-tap-highlight-color color-link-hover // hover color on tap action
+  &:hover
+    color color-link-hover
+
+  +mobile()
+    line-height 22px
+    letter-spacing 0
+
+// IE11/Edge support
+a
+  color color-link
+  transition .25s ease
+  font-size 14 / 20px
+
+  &:hover
+    color color-link-hover
+ */
+/*
+ * some mobile transform telephone number into callable links; this behaviour can be avoided with
+ * the following metatag in the page header: <meta name="format-detection" content="telephone=no">
+ * cf. https://developer.apple.com/library/safari/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html
+ */
+a[href='tel']
+  // text-decoration underline
+
+/*
+ * ARIA (https://w3c.github.io/html-aria/)
+ */
+[aria-busy='true']
+  // cursor progress
+
+// change the cursor on control elements.
+[aria-controls]
+  // cursor pointer
+
+/*
+ * Accessibility
+ */
+/* @media (prefers-reduced-motion: reduce)
+  *
+  ::before
+  ::after
+    transition none !important
+    animation none !important
+    scroll-behavior auto !important
+*/

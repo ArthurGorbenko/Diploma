@@ -1,0 +1,71 @@
+@keyframes bg
+  0%
+    transform scale(1) translateX(0)
+
+  50%
+    transform scale(1.062) translateX(50px)
+
+  100%
+    transform scale(1) translateX(0)
+
+@keyframes slide
+  0%
+    transform translateX(-24vw)
+
+  17%
+    transform translateX(29vw)
+
+  93%
+    transform translateX(40vw)
+    opacity 1
+
+  100%
+    transform translateX(87vw)
+    opacity 0
+
+.bg-theme
+  absolute top left
+  size 100vw 100vh
+  z-index 1
+  // background-image url('/dist/medias/design/d2/background.jpg')
+  background-size cover
+  background-position center
+  animation bg infinite 12s
+  animation-direction alternate
+
+  &.noanim
+    animation none
+
+.table
+  content ''
+  absolute bottom
+  z-index 2
+  size 100% 500
+  // background-image url('/dist/medias/design/d2/table/6.jpg')
+  background-size cover
+  background-position center
+
+.board
+  absolute bottom 20 left -38%
+  z-index 5
+  transform translateX(0)
+  png-size 'design/d2/plancha'
+
+// product
+.media
+  absolute bottom -10 left 230
+
+.with-price2
+  .board
+    left -50%
+
+.active
+  .board
+    animation-name slide
+    animation-fill-mode both
+
+.single
+  .board
+    animation none
+    transform translateX(40vw)
+    opacity 1

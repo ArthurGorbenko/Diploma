@@ -1,0 +1,541 @@
+{
+  "default": "default message",
+  "date": "Date",
+  "days": "days",
+  "day": "day",
+  "hours": "hours",
+  "hour": "hour",
+  "minutes": "minutes",
+  "minute": "minute",
+  "yes": "Yes",
+  "no": "No",
+  "not": "Not",
+  "cancel": "Cancel",
+  "submit": "Submit",
+  "refresh": "Refresh",
+  "health": "Health",
+  "view": "View",
+  "edit": "Edit",
+  "translate": "Translate",
+  "delete": "Delete",
+  "copy": "Copy",
+  "name": "Name",
+  "back": "Back to the list",
+  "active": "Active",
+  "disable": "Disable",
+  "disabled": "Disabled",
+  "published": "Published",
+  "emptyList": "Empty list",
+  "seconds": "Seconds",
+  "milliseconds": "Milliseconds",
+  "required": "Please, fill all required fields.",
+  "selectAnImage": "Select a label:",
+  "state": "State",
+  "module": "Module",
+  "action": "Action",
+  "created_at": "Created at",
+  "created_by": "Created by",
+  "languageSelect": "Language Select",
+  "lang": "Language",
+  "titleTranslation": "Title Translation",
+  "modal": {
+    "confirmTitle": "Are you sure you want to delete this item?"
+  },
+  "capability": {
+    "edit": "Edit capabilities",
+    "label": "Capabilities",
+    "CAPABILITY_ALL": "All",
+    "true": "True",
+    "false": "False",
+    "CAPABILITY_MINE": "Mine",
+    "CAPABILITY_MY_SHOP": "My shop",
+    "CAPABILITY_TRANSITION": "Transition",
+    "CAPABILITY_ONLY_ENABLE": "Only enable"
+  },
+  "subscription": {
+    "label": "Subscriptions",
+    "type": "Subscription type",
+    "create": "Create subscription",
+    "edit": "Edit subscription",
+    "admin": "Admin",
+    "simple_user": "Simple User",
+    "partner_transition_user": "Partner Transition User",
+    "partner_transition": "Partner Transition"
+  },
+  "category": {
+    "all": "All",
+    "name": "Category",
+    "label": "Categories",
+    "select": "Select category",
+    "create": "Create category",
+    "edit": "Edit category",
+    "extra": "Add other categories",
+    "error": "This category is related to products or shops, delete them before."
+  },
+  "queue": {
+    "all": "All",
+    "name": "Queue",
+    "label": "Queues",
+    "select": "Select queue",
+    "printer_queue_tooltip": "View printer queue",
+    "voice_announcer_queue_select": "Select a queue for voice announcement",
+    "create": "Create queue",
+    "edit": "Edit queue",
+    "extra": "Add other queues",
+    "queue-name": "Queue name",
+    "error": "Queue error.",
+    "voiceAnnouncementMode": "Voice announcement mode",
+    "notificationSounds": "Notification sounds",
+    "printQueueName": "Print queue name on the receipt",
+    "printDateTime": "Print date and hour on the receipt",
+    "printTicketMessage": "Print ticket message on the receipt",
+    "printPrecedingNumberCount": "Print preceding number count on the receipt",
+    "voiceAnnouncement": {
+      "disabled": "Disabled",
+      "male": "Male",
+      "female": "Female",
+      "appointed": "Appointed",
+      "arpeggio": "Arpeggio",
+      "definite": "Definite",
+      "exquisite": "Exquisite",
+      "open-ended": "Open-ended",
+      "point-blank": "Point-blank",
+      "pristine": "Pristine",
+      "unconvinced": "Unconvinced"
+    }
+  },
+  "user": {
+    "all": "All",
+    "name": "User",
+    "label": "Users",
+    "select": "Select user",
+    "create": "Create user",
+    "edit": "Edit user",
+    "email": "Email",
+    "shops": "Shops",
+    "role": "Role",
+    "username": "Username",
+    "lang": "Language",
+    "extraCapabilities": "Extra capabilities",
+    "subscriptions": "Subscriptions",
+    "filters": {
+      "all": "All users",
+      "active": "Active users",
+      "disabled": "Disabled users"
+    }
+  },
+  "event": {
+    "all": "All events",
+    "name": "Event",
+    "label": "Events",
+    "select": "Select event",
+    "create": "Create event",
+    "edit": "Edit event",
+    "extra": "Add other events",
+    "image": {
+      "all": "All images",
+      "name": "Image",
+      "label": "Images",
+      "select": "Select image",
+      "add": "Add image",
+      "edit": "Edit image",
+      "extra": "Add other images",
+      "none": "There are no images added yet."
+    }
+  },
+  "shop": {
+    "labelSingular": "Shop",
+    "label": "Shops",
+    "all": "All shops",
+    "select": "Select shop",
+    "create": "Create shop",
+    "edit": "Edit shop",
+    "tooltip": "View shop",
+    "name": "Name",
+    "email": "Email",
+    "address": "Address",
+    "phone": "Phone",
+    "owner_first_name": "Shop's owner first name",
+    "owner_last_name": "Shop's owner last name",
+    "owner_phone": "Shop's owner phone number",
+    "payment_frequency": "Payment frequency",
+    "payment_frequency_types": {
+      "month": "Per month",
+      "year": "Per year"
+    },
+    "expiration_date": "Expiration date",
+    "subscription_date": "Subscription date",
+    "subscription_date_label": "Subscription date",
+    "expiration_date_label": "Expiration date",
+    "expiration_date_warning": "Your license will expire soon",
+    "adminAccess": "Shop admin access",
+    "type": "Slide type",
+    "column": {
+      "logo": "Logo",
+      "expiration_date": "Expiration date"
+    },
+    "error": "This shop is related to products or slideshows, delete them before.",
+    "upload_size": "Total files size"
+  },
+  "media": {
+    "upload": {
+      "image": "Upload image",
+      "video": "Upload video",
+      "both": "Upload media",
+      "simple": "Upload"
+    },
+    "required": "Please, upload a media.",
+    "uploading": "Uploading...",
+    "error": {
+      "extension": "This file format isn't allowed",
+      "size": "File is too big",
+      "network": "The upload failed"
+    }
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "This page doesn't exist or has been deleted."
+  },
+  "notAccess": {
+    "title": "Sorry you don't have access to this page",
+    "back": "go back"
+  },
+  "product": {
+    "label": "Product name",
+    "create": "Create a product",
+    "edit": "Edit product",
+    "list": "Products",
+    "error": "This product is related to some slides, delete them before.",
+    "column": {
+      "mediaType": "Media type"
+    },
+    "filters": {
+      "all": "All products",
+      "default": "Default products",
+      "mine": "My products"
+    }
+  },
+  "slideshow": {
+    "transition": "Transition name",
+    "transitionId": "Transition ID",
+    "transitionDuration": "Transition duration",
+    "label": "Slideshow name",
+    "tooltip": "View slideshow",
+    "select": "Select slideshow",
+    "create": "Create a slideshow",
+    "edit": "Edit slideshow",
+    "list": "Slideshows",
+    "duplicate": "Duplicate",
+    "preview_new_tab": "Open in new tab",
+    "speed": "Speed",
+    "reboot": "Reboot",
+    "shutdown": "Shutdown",
+    "restart": "Restart",
+    "shutdownAll": "Shutdown all devices",
+    "restartAll": "Restart all devices",
+    "tmate_restart": "Restart tmate",
+    "command": {
+      "install": "Install",
+      "configure": "Configure",
+      "ip": "Raspberry IP",
+      "screenOnly": "Command to change only the slideshow:",
+      "printerSetup": "Printer setup",
+      "queueNumSetup": "Queue control numpad setup",
+      "voiceAnnouncement": "Voice announcement",
+      "printerWarning": "Note : if you're enabling printer on existing device, you'll need to resetup raspberry: connect printer and relaunch command from install step."
+    },
+    "details": {
+      "slideCount": "slide",
+      "slidesCount": "slides"
+    },
+    "help": {
+      "changeDesign": "To change the design, you need to remove all slides from it.",
+      "addTransition": "You will be able to add only images and events slides."
+    }
+  },
+  "preview": {
+    "show": "Show preview",
+    "hide": "Hide preview",
+    "update": "Update preview",
+    "includeDisabled": "Include disabled slides"
+  },
+  "device": {
+    "create": "Create a device",
+    "showDevices": "Show devices",
+    "showDevice": "Show device",
+    "devicesCount": "devices",
+    "deviceCount": "device",
+    "password": "Device password",
+    "copyPassword": "Copy password:",
+    "copySshCommand": "Copy SSH connection command",
+    "edit": "Edit",
+    "sshConnection": "SSH connection",
+    "list": "Devices",
+    "preview": "Preview",
+    "name": "Device name",
+    "description": "Device description",
+    "screen_slideshow": "Slideshow",
+    "shop": "Shop",
+    "voice_announcer_queue": "Queue for voice announcement",
+    "change_voice": "Change voice mode",
+    "queue_control": "Queue control",
+    "queue_controls_window": "Window",
+    "printer_queue": "Queue",
+    "queue_controls_device_name_regex": "Device name",
+    "control": "Device control",
+    "reporting": "Reporting",
+    "status": {
+      "all": "All devices",
+      "true": "Devices online",
+      "false": "Devices offline",
+      "never": "Devices not installed"
+    },
+    "lastAlive": {
+      "today": "Today at",
+      "yesterday": "Yesterday at",
+      "noData": "no data"
+    },
+    "types": {
+      "cpu": "CPU",
+      "memory": "Memory",
+      "gpu": "GPU",
+      "diskUsage": "Disk usage"
+    },
+    "details": {
+      "slideCount": "slide",
+      "slidesCount": "slides"
+    }
+  },
+  "slides": {
+    "list": "Slides",
+    "create": "Create a slide",
+    "edit": "Edit slide",
+    "number": "Slide index",
+    "price": "Price",
+    "priceSecondary": "Second price",
+    "priceDetails": "Price details",
+    "product": "Select a product",
+    "productSelectCategory": "Select a product (Please select a category first, above)",
+    "productName": "Change the product name",
+    "title": "Slide title",
+    "reorder": "Change order",
+    "promoText": "Promotional text",
+    "createPreview": "See Preview",
+    "updatePreview": "Update Preview",
+    "country": "Country of origin",
+    "seeSlideshow": "Slideshow details",
+    "type": "Slide type",
+    "slideOfScreen": "Slide",
+    "slidesOfScreen": "Slides",
+    "imageUrl": "Image url",
+    "videoUrl": "Video url",
+    "directUrl": "Direct url",
+    "warning": "Note: URL has priority over uploaded media.",
+    "muted": "Muted video",
+    "slideType": {
+      "image": "Image",
+      "product": "Product",
+      "video": "Video",
+      "event_image": "Event",
+      "queue": "Queue"
+    },
+    "priceTypes": {
+      "piece": "Per piece",
+      "none": "No price",
+      "plain": "Free text"
+    },
+    "events": {
+      "today": "Today only",
+      "limit": "Limited quantity",
+      "promotion": "PROMOTION",
+      "oneForTwo": "One product bought, one offered"
+    },
+    "column": {
+      "order": "Order",
+      "type": "Type",
+      "queueName": "Queue Name",
+      "queueId": "Queue ID",
+      "data": "Content"
+    },
+    "origin": {
+      "france": "France",
+      "spain": "Spain",
+      "uk": "United Kingdom",
+      "netherlands": "Netherlands",
+      "belgium": "Belgium"
+    }
+  },
+  "labels": {
+    "list": "Labels",
+    "create": "Create a label",
+    "edit": "Edit label",
+    "name": "Label name",
+    "none": "There are no labels for this category."
+  },
+  "windows": {
+    "list": "Windows",
+    "select": "Select window",
+    "create": "Create ",
+    "edit": "Edit ",
+    "create1": " window",
+    "label": "Label",
+    "name": "Window label",
+    "none": "There are no window for this queue.",
+    "error": "Window error.",
+    "hwid": "Hwid"
+  },
+  "designs": {
+    "list": "Designs",
+    "singleLabel": "Design",
+    "pickForProduct": "Choose designs the product is available for",
+    "pickForShop": "Choose designs available only to that shop (don't add global designs!)",
+    "pick": "Choose a design",
+    "labels": {
+      "allDesigns": "All designs",
+      "d1": "Design 1",
+      "d1dm": "Design 1 Dark",
+      "d2": "Design 2",
+      "d3": "Design 3",
+      "d4": "Design 4",
+      "d4dm": "Design 4 Dark",
+      "all": "All"
+    },
+    "none": "There are no design for this category."
+  },
+  "transition": {
+    "list": "Transitions",
+    "view": "View transition",
+    "create": "Create transition",
+    "edit": "Edit transition",
+    "demo": "Link to demo",
+    "glsl": "Glsl",
+    "label": "Transition name",
+    "filters": {
+      "all": "All transitions",
+      "published": "Published",
+      "unpublished": "Unpublished"
+    }
+  },
+  "options": {
+    "name": "Options",
+    "select": "Select an option",
+    "default": "Default value",
+    "none": "ø",
+    "nothingSelected": "No selection",
+    "slideOptions": "Specific options for slide type",
+    "delete": "Remove this option",
+    "entities": {
+      "product": "Product",
+      "slide_image": "Slide with image",
+      "slide_product": "Product slide",
+      "slideshow": "Slideshow",
+      "slide": "Slide",
+      "all": "All"
+    },
+    "labels": {
+      "bg_photo": "Background photo",
+      "theme_color": "Theme color",
+      "bg_text_color": "Background text color",
+      "table": "Table photo",
+      "left": "Image on the left side",
+      "top_left": "Image on the top left corner",
+      "top_right": "Image on the top right corner",
+      "right": "Image on the right side",
+      "bottom": "Image on the bottom side",
+      "text_color": "Text colors",
+      "show_queue_name": "Show queue name",
+      "queue_message": "Add queue message",
+      "strike_through_price": "Strike through the first price",
+      "show_discounted_percent": "Show the discounted percent",
+      "main_color": "Main color",
+      "title_uppercase": "Put the title in uppercase"
+    }
+  },
+  "offline": {
+    "title": "App is offline",
+    "description": "App is currently offline, this might be due to your connection or service is down"
+  },
+  "navigation": {
+    "subscription": "Subscriptions",
+    "capability": "Capabilities",
+    "category": "Categories",
+    "slideshow": "Slideshows",
+    "slideshowTabs": "Slideshows:",
+    "product": "Slide",
+    "products": "Slide",
+    "tmateSession": "Tmate",
+    "shop": "Shops",
+    "user": "Users",
+    "error": "Errors",
+    "design": "Designs",
+    "option": "Options",
+    "event": "Events",
+    "queue": "Queues",
+    "transition": "Transitions",
+    "device": "Devices",
+    "LogOut": "Log out"
+  },
+  "error": {
+    "label": "Errors",
+    "class": "Class",
+    "route": "Route",
+    "source": "Source",
+    "message": "Message",
+    "requiredField": "This field is required",
+    "passwordLength": "Password must have at least 7 characters",
+    "emailUsed": "This email is already in use",
+    "incorrectEmail": "Your email is incorrect",
+    "translationExists": "Product already has this language translation",
+    "filters": {
+      "all": "All",
+      "doctor": "Doctor",
+      "admin": "Admin",
+      "api": "API"
+    }
+  },
+  "tmate": {
+    "session": {
+      "label": "Tmate sessions",
+      "link": "Link to Tmate session"
+    }
+  },
+  "auth": {
+    "login": "Login",
+    "loginTitle": "Connection",
+    "username": "Username",
+    "password": "Password",
+    "linkResetPassword": "Forgot password",
+    "resetTitle": "Reset my password",
+    "backLink": "Back to login",
+    "invalidCredentials": "Invalid credentials",
+    "email": "Email"
+  },
+  "languages": {
+    "all": "All languages",
+    "en": "English",
+    "fr": "Français",
+    "ru": "Русский",
+    "uk": "Українська"
+  },
+  "currencies": {
+    "label": "Currency"
+  },
+  "role": {
+    "label": "Role",
+    "creator_role": "Creator role",
+    "all": "All roles",
+    "ROLE_USER": "User",
+    "ROLE_ADMIN": "Admin",
+    "ROLE_PARTNER_TRANSITION": "Partner (Transitions)",
+    "ROLE_PARTNER_TRANSITION_USER": "User (Transitions)"
+  },
+  "ticketMessage": {
+    "name": "Ticket message",
+    "create": "Create ticket message",
+    "list": "Ticket messages",
+    "title": "Ticket title",
+    "text": "Ticket text",
+    "edit": "Edit ticket message",
+    "select": "Pick ticket message override"
+  }
+}

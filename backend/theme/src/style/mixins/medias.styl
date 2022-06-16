@@ -1,0 +1,109 @@
+/*
+ * cf. axis.netlify.com
+ */
+/*
+ * import js plugin
+ * cf. stylus-lang.com/docs/bifs.html#usepath
+ */
+use('stylus-plugins.js')
+medias-path-local = path-local(assets-path, medias-path)
+medias-path-theme = path-theme(assets-path, medias-path)
+
+image-size-safe(filename)
+  image-path = pathjoin(medias-path-local, filename)
+
+  if file-exists(image-path)
+    image-size(image-path)
+  else
+    warn("Stylus couldn't find '" + image-path + "'.")
+    nil
+
+img(filename, rep = false, p1 = 0, p2 = null, p3 = null, p4 = null)
+  if (filename == none)
+    background-image none
+  else
+    size = image-size-safe(filename)
+
+    if (size != nil)
+      background-image url(pathjoin(medias-path-theme, filename))
+
+      if (rep != nil && (rep != cover && (rep != contain)))
+        background-size size
+
+      if (rep == false)
+        // background-repeat no-repeat // default in reset.styl
+      else if (rep == no-repeat || (rep == repeat || (rep == repeat-x || (rep == repeat-y || (rep == inherit)))))
+        background-repeat rep
+
+        if (p2 == null && (p1 != center))
+          p2 = 0
+
+        background-position p1 p2 p3 p4
+      else if (rep == cover || (rep == contain))
+        background-size rep
+
+        if (p1 == 0)
+          background-position center
+        else
+          background-position p1 p2 p3 p4
+      else if (rep != nil)
+        if (p1 == 0 && (rep == center))
+          p1 = null
+
+        // background-repeat no-repeat // default in reset.styl
+        background-position rep p1 p2 p3
+
+img-size(filename, rep = false, p1 = 0, p2 = null, p3 = null, p4 = null)
+  size = image-size-safe(filename)
+
+  if (size != nil)
+    img(filename, rep, p1, p2, p3, p4)
+    size size
+
+png(filename, rep = false, p1 = 0, p2 = null, p3 = null, p4 = null)
+  img(filename + '.png', rep, p1, p2, p3, p4)
+
+png-size(filename, rep = false, p1 = 0, p2 = null, p3 = null, p4 = null)
+  img-size(filename + '.png', rep, p1, p2, p3, p4)
+
+jpg(filename, rep = false, p1 = 0, p2 = null, p3 = null, p4 = null)
+  img(filename + '.jpg', rep, p1, p2, p3, p4)
+
+jpg-size(filename, rep = false, p1 = 0, p2 = null, p3 = null, p4 = null)
+  img-size(filename + '.jpg', rep, p1, p2, p3, p4)
+
+gif(filename, rep = false, p1 = 0, p2 = null, p3 = null, p4 = null)
+  img(filename + '.gif', rep, p1, p2, p3, p4)
+
+gif-size(filename, rep = false, p1 = 0, p2 = null, p3 = null, p4 = null)
+  img-size(filename + '.gif', rep, p1, p2, p3, p4)
+
+svg(filename, rep = false, p1 = 0, p2 = null, p3 = null, p4 = null)
+  image-path = pathjoin(medias-path-local, filename + '.svg')
+
+  if file-exists(image-path)
+    background-image url(pathjoin(medias-path-theme, filename + '.svg'))
+  else
+    warn("Stylus couldn't find '" + image-path + "'.")
+
+  if (rep == false)
+    background-repeat no-repeat
+  else if (rep == no-repeat || (rep == repeat || (rep == repeat-x || (rep == repeat-y || (rep == inherit)))))
+    background-repeat rep
+
+    if (p2 == null && (p1 != center))
+      p2 = 0
+
+    background-position p1 p2 p3 p4
+  else if (rep == cover || (rep == contain))
+    background-size rep
+
+    if (p1 == 0)
+      background-position center
+    else
+      background-position p1 p2 p3 p4
+  else if (rep != nil)
+    if (p1 == 0 && (rep == center))
+      p1 = null
+
+    background-position rep p1 p2 p3

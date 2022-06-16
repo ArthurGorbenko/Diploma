@@ -1,0 +1,28 @@
+{# prepare product partials #}
+{% set tpl = [] %}
+{% set ext = '.html.twig' %}
+{% set pathDefault = ['default/slide/product-']|join %}
+{% set pathTheme = [slideshow.design, '/slide/product-']|join %}
+{% set files = ['media', 'price', 'event', 'title', 'labels', 'origin'] %}
+{% for file in files %}
+  {% set tpl =
+    tpl|merge({
+      (file): [[pathTheme, file, ext]|join, [pathDefault, file, ext]|join]
+    })
+  %}
+{% endfor %}
+
+{% extends 'base.html.twig' %}
+{% block body %}
+  {# {% dump(_context) %} #}
+
+  <div class="slideshow{{ (slideshow.slides|length) < 2 ? ' single' }}" data-speed="{{ slideshow.speed }}" data-version="{{ slideshow.version }}">
+    {% for slide in slideshow.slides %}
+      {% set data = slide.slide_data %}
+      {# slideshow.transition == 'fading' and data.product.media_type != 'video' ? ' fading' : '' #}
+      <div class="slide slide-{{ slide.type }}{{ loop.index == 1 ? ' active' : '' }}{{ slide.type == 'product' and data.price2 ? ' with-price2' : '' }}">
+        {% include [[slideshow.design, '/slide/', slide.type, ext]|join, ['default/slide/', slide.type, ext]|join] %}
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}

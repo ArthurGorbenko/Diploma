@@ -1,0 +1,28 @@
+.title
+  absolute top left
+  display flex
+  align-items center
+  justify-content center
+  size 61.7% 330
+  background-size cover
+  background-position center
+  font-family font-cond
+  color white
+  padding-y 0
+  padding-x 10
+  font-size 147
+  font-weight bold
+  text-shadow 2 8 2 rgba(black, .3)
+  text-align center
+
+  &.gt20
+    font-size 109
+
+.active
+  .title
+    animation swingin 1s cubic-bezier(.175, .885, .32, 1.275) both
+
+  &.beforeEnd .title
+    opacity 1
+    animation none
+    transform translateY(-100%) !important

@@ -1,0 +1,32 @@
+.price
+  absolute top -50 right
+  size 38.3% 330
+  font-size 200 / .9
+  color d2-color-red white
+  opacity 0
+
+  b
+    transform translate(3px, -60%)
+
+  &-detail
+    font-size 90
+    color black
+    margin-top 15
+    padding-right 45
+
+  &2
+    color white d2-color-red
+
+    .price-detail
+      color white
+
+.active
+  .price
+    top 0
+    opacity 1
+
+    &2
+      top 330
+
+  &.beforeEnd .price
+    right -39%

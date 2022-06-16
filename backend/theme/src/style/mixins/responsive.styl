@@ -1,0 +1,67 @@
+/*
+ * device breakpoints
+ * ---------------------
+ *
+ * 0                           bp-mobile                         +oo
+ * v                               v                               v
+ * |<--         mobile          -->|<--         desktop         -->|
+ * |<--  phone  -->|<--  tablet -->|<-- desktop -->|<- screen-hd ->|
+ * |               ^               ^               ^               |
+ * |           bp-phone        bp-mobile      bp-desktop           |
+ */
+/*
+ * responsive helper mixins
+ * ------------------------
+ * mobile devices are targeted with a `.device-mobile` class
+ * set on the html element in javascript.
+ * phones and tablets are target by `.device-phone`
+ * and `.device-tablet` classes.
+ *
+ * media queries depend on helper functions from `rupture`
+ * stylus plugin (http://jescalan.github.io/rupture/)
+ */
+breakpoint-tablet = breakpoint-mobile
+
+mobile()
+  +below(breakpoint-mobile)
+    .device-mobile &
+      {block}
+
+  /* +below(base-width-mobile)
+  {block} */
+
+// not compatible with ie8 and older
+not-mobile()
+  +above(breakpoint-mobile)
+    :not(.device-mobile) &
+      {block}
+
+phone()
+  +below(breakpoint-phone)
+    .device-phone &
+      {block}
+
+tablet()
+  +between(breakpoint-phone, breakpoint-tablet)
+    .device-tablet &
+      {block}
+
+desktop()
+  +not-mobile()
+    {block}
+
+screen-hd()
+  +above(breakpoint-desktop)
+    {block}
+
+/*
+.desktop-only
+  +mobile()
+    display none !important
+
+.mobile-only
+  display none !important
+
+  +mobile()
+    display block !important
+*/

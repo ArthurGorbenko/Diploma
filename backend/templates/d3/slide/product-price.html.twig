@@ -1,0 +1,25 @@
+<div class="price-wrapper">
+  {% if data.price1 is not empty %}
+    <div class="price">
+      <span>{{ data.price1|raw }}<b>€</b></span>
+      {% if data.price1_detail is not empty %}
+        <span class="price-detail">{{ data.price1_detail }}</span>
+      {% endif %}
+    </div>
+  {% endif %}
+
+  {% if data.price2 is not empty %}
+    <div class="price price2">
+      <span>{{ data.price2|raw }}<b>€</b></span>
+      {% if data.price2_detail is not empty %}
+        <span class="price-detail">{{ data.price2_detail }}</span>
+      {% endif %}
+    </div>
+  {% endif %}
+
+  {% if data.country %}
+    <div class="origin">
+      {{ data.country }}
+    </div>
+  {% endif %}
+</div>

@@ -1,0 +1,20 @@
+.event
+  padding 18
+  font-size 42 / 28px
+  font-family font-cond
+  font-weight bold
+  opacity 0
+  transition all .4s
+  z-index 30
+  white-space nowrap
+
+.active
+  .event
+    opacity 1
+    animation pulse 3s ease-in-out infinite both
+
+    &-alt
+      top 655
+
+  &.beforeEnd .event
+    opacity 0

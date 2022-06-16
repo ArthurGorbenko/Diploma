@@ -1,0 +1,27 @@
+.price
+  display flex
+  flex-direction column
+  font-weight 900
+  padding 20
+  text-align center
+  transition all .45s
+  letter-spacing -4
+
+  b
+    display inline-block
+    font-size .6em
+    transform translate(3px, -73%)
+
+  &-detail
+    margin-top 20
+    text-transform lowercase
+    font-weight 500
+
+.active
+  .price
+    animation wobble 4.5s infinite both
+    animation-delay .5s
+
+    &2
+      animation-delay 2s
+      transition-delay .1s

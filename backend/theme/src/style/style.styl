@@ -1,0 +1,43 @@
+assets-path = $default-assets-path
+medias-path = $default-medias-path
+fonts-path = $default-fonts-path
+// colors
+color-red = #E20209
+// base width for responsive
+base-width-desktop = 1280px
+base-width-tablet = 768px
+base-width-mobile = 375px
+// device content width
+content-width-desktop = 940px
+content-width-tablet = 640px
+content-width-mobile = 100%
+// responsive breakpoints (cf. mixins responsive.styl for more information)
+// use rupture stylus plugin default values
+breakpoint-desktop = base-width-desktop // desktop/screen-hd breakpoint
+breakpoint-mobile = rupture.desktop-cutoff // mobile/desktop breakpoint (default: 1050px)
+breakpoint-phone = rupture.mobile-cutoff // phone/tablet breakpoint (default: 400px)
+// prevents some stylus autoprefixing
+vendors = official
+
+@require 'default'
+@require 'mixins/*'
+
+font-roboto-cond = 'Roboto Condensed', sans-serif
+font-roboto = 'Roboto', sans-serif
+font = font-roboto
+font-cond = font-roboto-cond
+
+@require 'layout/**/*'
+@require 'design/_common/**/*'
+
+/* Include theme with namespace */
+.d3 // default design
+  @require './design/d3/**/*'
+
+.d2 // hmarket
+  d2-color-red = #c60000
+
+  @require './design/d2/**/*'
+
+.d1 // top view
+  @require './design/d1/**/*'

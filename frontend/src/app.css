@@ -1,0 +1,11 @@
+/*.MuiInput-underline::after {
+  border-bottom: 2px solid #f75636;
+}
+.MuiFormLabel-root.Mui-focused {
+  color: #f75636;
+}
+*/
+
+body {
+  padding-bottom: 75px;
+}

@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+  <div class="error">
+    <h1>
+      {% if error == 'invalid uuid' %}
+        Votre license est manquante ou à expirée
+        <br />
+        <span>(invalid uuid)</span>
+      {% elseif error == 'invalid slideshow_id' %}
+        Cet écran n'existe pas ou à été supprimé
+        <br />
+        <span>(invalid slideshow_id)</span>
+      {% elseif error == 'disabled license' %}
+        Votre license est désactivée
+        <br />
+        <span>(disabled license)</span>
+      {% elseif error == 'expired license' %}
+        Votre license à expirée
+        <br />
+        <span>(expired license)</span>
+      {% elseif error == 'no slides found' %}
+        Cet écran ne contient aucun produit
+        <br />
+        <span>(no slides found)</span>
+      {% elseif error == 'disabled slideshow' %}
+        Cet écran est désactivé
+        <br />
+        <span>(disabled slideshow)</span>
+      {% endif %}
+    </h1>
+  </div>
+{% endblock %}

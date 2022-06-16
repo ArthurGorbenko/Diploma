@@ -1,0 +1,25 @@
+/*
+ * fluid layout
+ * ------------
+ * set font-size relative to window width; all subsequent
+ * font and block size are automatically converted to `rem` units
+ * by the `postcss-pxtorem` plugin, with a root value of 1
+ */
+html
+  font-size unit(($rem-root-value * 100 / base-width-desktop), 'vw')
+
+  /* +below(base-width-mobile)
+  font-size $rem-root-value !important */
+  +above(breakpoint-desktop)
+    font-size $rem-root-value
+
+  &.no-scroll
+    // overflow hidden
+
+body
+  font-family font
+  margin 0
+  overflow hidden
+
+  &:not(.dev)
+    pointer-events none

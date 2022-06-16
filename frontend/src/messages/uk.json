@@ -1,0 +1,546 @@
+{
+  "default": "Повідомлення за замовчуванням",
+  "date": "Дата",
+  "days": "days",
+  "day": "day",
+  "hours": "hours",
+  "hour": "hour",
+  "minutes": "minutes",
+  "minute": "minute",
+  "yes": "Так",
+  "no": "Ні",
+  "not": "Ні",
+  "cancel": "Відмінити",
+  "submit": "Підтвердити",
+  "refresh": "Оновити",
+  "health": "Здоров'я",
+  "view": "Переглянути",
+  "edit": "Редагувати",
+  "translate": "Переклад",
+  "delete": "Видалити",
+  "copy": "Копіювати",
+  "name": "Найменування",
+  "back": "Назад до списку",
+  "active": "Активний",
+  "disable": "Не доступно",
+  "disabled": "Не доступно",
+  "published": "Опубліковано",
+  "emptyList": "Пустий список",
+  "seconds": "Секунд",
+  "milliseconds": "Мілісекунди",
+  "required": "Будь ласка, заповніть всі необхідні поля",
+  "selectAnImage": "Виберіть логотип:",
+  "state": "Статус",
+  "module": "Модуль",
+  "action": "Дія",
+  "created_at": "Створити в",
+  "created_by": "Створено користувачем",
+  "languageSelect": "Вибір мови",
+  "lang": "Мова",
+  "titleTranslation": "Переклад заголовка",
+  "modal": {
+    "confirmTitle": "Ви справді бажаєте видалити цей елемент?"
+  },
+  "capability": {
+    "edit": "Редагувати можливості",
+    "label": "Можливості",
+    "CAPABILITY_ALL": "Всі",
+    "true": "True",
+    "false": "False",
+    "CAPABILITY_MINE": "Мої",
+    "CAPABILITY_MY_SHOP": "Мого магазину",
+    "CAPABILITY_TRANSITION": "Транформації",
+    "CAPABILITY_ONLY_ENABLE": "Тільки включені"
+  },
+  "subscription": {
+    "label": "Підписки",
+    "type": "Тип підписки",
+    "create": "Створити підписку",
+    "edit": "Редагувати підписку",
+    "admin": "Адмін",
+    "simple_user": "Простий користувач",
+    "partner_transition_user": "Користувач партнера",
+    "partner_transition": "Партнер"
+  },
+  "category": {
+    "all": "Всі",
+    "name": "Категорія",
+    "label": "Категорії",
+    "select": "Виберіть категорію",
+    "create": "Створити категорію",
+    "edit": "Редагувати категорію",
+    "extra": "Добавити інші категорії",
+    "error": "Ця категорія відноситься до товарів або магазинів, спочатку видаліть їх."
+  },
+  "queue": {
+    "all": "Всі",
+    "name": "Черга",
+    "label": "Черги",
+    "select": "Виберіть чергу",
+    "printer_queue_tooltip": "View printer queue",
+    "voice_announcer_queue_select": "Виберіть чергу для голосового оповіщення",
+    "create": "Створити чергу",
+    "edit": "Редагувати чергу",
+    "extra": "Добавити інші черги",
+    "queue-name": "Найменування черги",
+    "error": "Помилка черги.",
+    "voiceAnnouncementMode": "Режим голосових сповіщень",
+    "notificationSounds": "Звуки сповіщень",
+    "printQueueName": "Надрукувати ім'я черги на квитанції",
+    "printDateTime": "Надрукувати час та дату на квитанції",
+    "printTicketMessage": "Надрукувати послання на квитанції",
+    "printPrecedingNumberCount": "Надрукувати кількість людей перед клієнтом на квитанції",
+    "voiceAnnouncement": {
+      "disabled": "Відсутній",
+      "male": "Чоловічий голос",
+      "female": "Жіночий голос",
+      "appointed": "Appointed",
+      "arpeggio": "Arpeggio",
+      "definite": "Definite",
+      "exquisite": "Exquisite",
+      "open-ended": "Open-ended",
+      "point-blank": "Point-blank",
+      "pristine": "Pristine",
+      "unconvinced": "Unconvinced"
+    }
+  },
+  "user": {
+    "all": "Всі",
+    "name": "Користувач",
+    "label": "Користувачі",
+    "select": "Вибрати користувача",
+    "create": "Створити користувача",
+    "edit": "Редагувати користувача",
+    "email": "Пошта",
+    "shops": "Магазини",
+    "role": "Роль",
+    "username": "Логін",
+    "lang": "Мова",
+    "extraCapabilities": "Додаткові можливості",
+    "subscriptions": "Підписки",
+    "filters": {
+      "all": "Всі користувачі",
+      "active": "Активні користувачі",
+      "disabled": "Не активні користувачі"
+    },
+    "created_at": "Створено в",
+    "created_by": "Створено користувачем"
+  },
+  "event": {
+    "all": "Всі події",
+    "name": "Подія",
+    "label": "Події",
+    "select": "Вибрати подію",
+    "create": "Створити подію",
+    "edit": "Редагувати подію",
+    "extra": "Добавити інші події",
+    "image": {
+      "all": "Всі зображення",
+      "name": "Зображення",
+      "label": "Зображення",
+      "select": "Вибрати зображення",
+      "add": "Добавити зображення",
+      "edit": "Редагувати зображення",
+      "extra": "Добавити інші зображення",
+      "none": "Зображення ще не добавлені."
+    }
+  },
+  "shop": {
+    "labelSingular": "Магазин",
+    "label": "Магазини",
+    "all": "Всі магазини",
+    "select": "Вибрати магазин",
+    "create": "Створити магазин",
+    "edit": "Редагувати магазин",
+    "tooltip": "View shop",
+    "name": "Найменування",
+    "email": "Електронна пошта",
+    "address": "Адрес",
+    "phone": "Телефон",
+    "owner_first_name": "Ім'я власника магазину",
+    "owner_last_name": "Прізвіще власника магазину",
+    "owner_phone": "Телефон власника магазину",
+    "payment_frequency": "Періодичність платежів",
+    "payment_frequency_types": {
+      "month": "Кожен місяць",
+      "year": "Кожен рік"
+    },
+    "expiration_date": "Виберіть дату закінчення терміну",
+    "subscription_date": "Виберіть дату підписки",
+    "subscription_date_label": "Дата підписки",
+    "expiration_date_label": "Дата закінчення терміну",
+    "expiration_date_warning": "Термін дії вашої ліцензії скоро закінчиться",
+    "adminAccess": "Доступ адміністратора магазину",
+    "type": "Тип слайду",
+    "column": {
+      "logo": "Логотип",
+      "expiration_date": "Дата закінчення терміну"
+    },
+    "error": "Цей магазин має відношення до товарів або слайдів, спочатку видаліть їх.",
+    "upload_size": "Загальний розмір завантажених файлів"
+  },
+  "media": {
+    "upload": {
+      "image": "Завантажити зображення",
+      "video": "Завантажити видео",
+      "both": "Завантажити медіа",
+      "simple": "Завантажити"
+    },
+    "required": "Будь ласка, завантажте медіа.",
+    "uploading": "Завантаження...",
+    "error": {
+      "extension": "Цей формат файлу не дозволено",
+      "size": "Файл занадто великий",
+      "network": "Не вдалося завантажити"
+    }
+  },
+  "notFound": {
+    "title": "Сторінка не знайдена",
+    "description": "Ця сторінка не існує або була видалена."
+  },
+  "notAccess": {
+    "title": "У вас немає доступу до цієї сторінки",
+    "back": "Назад"
+  },
+  "product": {
+    "label": "Найменування продукту",
+    "create": "Створити продукт",
+    "edit": "Редагувати продукт",
+    "list": "Слайди",
+    "error": "Цей товар пов'язаний з деякими слайдами, спочатку видаліть їх.",
+    "column": {
+      "mediaType": "Тип медіа"
+    },
+    "filters": {
+      "all": "Всі продукти",
+      "default": "Продукти за замовчуванням",
+      "mine": "Мої продукти"
+    },
+    "translation": "Переклад"
+  },
+  "slideshow": {
+    "transition": "Найменування транформації",
+    "transitionId": "ID транформації",
+    "transitionDuration": "Тривалість транформації",
+    "label": "Найменування екрану",
+    "tooltip": "View slideshow",
+    "select": "Вибрати слайдшоу",
+    "create": "Створити екран",
+    "edit": "Редагувати екран",
+    "list": "Екрани",
+    "duplicate": "Дублювати",
+    "preview_new_tab": "Відкрити в новій вкладці",
+    "speed": "Швидкість",
+    "reboot": "Перезавантажити Doctor",
+    "shutdown": "Виключити",
+    "restart": "Перезавантажити пристрій",
+    "shutdownAll": "Shutdown all",
+    "restartAll": "Restart all",
+    "tmate_restart": "Перезавантажити tmate",
+    "command": {
+      "install": "Установити",
+      "configure": "Налаштування",
+      "ip": "Raspberry IP",
+      "screenOnly": "Команда для зміни тільки екрану:",
+      "printerSetup": "Налаштування принтеру",
+      "queueNumSetup": "Налаштування нампаду управління чергою",
+      "voiceAnnouncement": "Голосове оповіщення",
+      "printerWarning": "Якщо ви встановлюєте принтер на існуючий девайс, вам необхідно знову перевстановити Raspberry: підключіть принтер і перезапустіть команду з меню установки.",
+      "slideshowOpening": "Відкрити слайдшоу"
+    },
+    "details": {
+      "slideCount": "слайд",
+      "slidesCount": "слайди"
+    },
+    "help": {
+      "changeDesign": "Щоб змінити дизайн, потрібно видалити всі слайди.",
+      "addTransition": "Ви зможете добавити тільки зображення і слади подій."
+    }
+  },
+  "preview": {
+    "show": "Показати попередній перегляд",
+    "hide": "Приховати попередній перегляд",
+    "update": "Оновити попередній перегляд",
+    "includeDisabled": "Включіть відключені слайди"
+  },
+  "device": {
+    "create": "Створити пристрій",
+    "showDevices": "Show devices",
+    "showDevice": "Show device",
+    "devicesCount": "devices",
+    "deviceCount": "device",
+    "password": "Device password",
+    "copyPassword": "Copy device password",
+    "copySshCommand": "Copy SSH connection command",
+    "edit": "Редагувати пристрій",
+    "sshConnection": "SSH connection",
+    "list": "Пристрої",
+    "preview": "Прев'ю",
+    "name": "Назва пристрою",
+    "description": "Опис пристрою",
+    "screen_slideshow": "Слайдшоу",
+    "shop": "Магазин",
+    "voice_announcer_queue": "Черга для голосового сповіщення",
+    "change_voice": "Змінити голосовий режим",
+    "queue_control": "Управління чергою",
+    "queue_controls_window": "Вікно",
+    "printer_queue": "Черга",
+    "queue_controls_device_name_regex": "Найменування пристрою",
+    "control": "Керування пристрієм",
+    "reporting": "Reporting",
+    "status": {
+      "all": "Всі екрани",
+      "true": "Включені екрани",
+      "false": "Виключені екрани",
+      "never": "Не установлені екрани"
+    },
+    "lastAlive": {
+      "today": "Сьогодні о",
+      "yesterday": "Вчора о",
+      "noData": "немає даних"
+    },
+    "types": {
+      "cpu": "CPU",
+      "memory": "Пам'ять",
+      "gpu": "GPU",
+      "diskUsage": "Disk usage"
+    },
+    "details": {
+      "slideCount": "слайд",
+      "slidesCount": "слайди"
+    }
+  },
+  "slides": {
+    "list": "Слайди",
+    "create": "Створити слайд",
+    "edit": "Редагувати слайд",
+    "number": "Індекс слайда",
+    "price": "Ціна продукту",
+    "priceSecondary": "Друга ціна",
+    "priceDetails": "Детальна інформація про ціну",
+    "product": "Виберіть продукт",
+    "productSelectCategory": "Виберіть продукт (спочатку виберіть категорію вище)",
+    "productName": "Змініть назву продукту",
+    "title": "Заголовок слайда",
+    "reorder": "Змінити порядок",
+    "promoText": "Рекламний текст",
+    "createPreview": "See Preview",
+    "updatePreview": "Update Preview",
+    "country": "Країна походження",
+    "seeSlideshow": "Деталі экрана",
+    "type": "Тип слайда",
+    "slideOfScreen": "Слайд екрана",
+    "slidesOfScreen": "Слайди экрана",
+    "imageUrl": "Посилання на зображення",
+    "videoUrl": "Посилання на відео",
+    "directUrl": "Пряме посилання",
+    "warning": "Зверніть увагу: вказане посилання має пріоритет над завантаженим файлом.",
+    "muted": "Вiдео без звуку",
+    "slideType": {
+      "image": "Зображення",
+      "product": "Продукт",
+      "video": "Відео",
+      "event_image": "Подія",
+      "queue": "Черга"
+    },
+    "priceTypes": {
+      "piece": "За штуку",
+      "none": "Немає ціни",
+      "plain": "Вільне поле"
+    },
+    "events": {
+      "today": "Тільки сьогодні",
+      "limit": "Обмежена кількість",
+      "promotion": "АКЦІЯ",
+      "oneForTwo": "Два продукти по ціні одного"
+    },
+    "column": {
+      "order": "Замовлення",
+      "type": "Тип",
+      "queueName": "Найменування черги",
+      "queueId": "ID черги",
+      "data": "Зміст"
+    },
+    "origin": {
+      "france": "Франція",
+      "spain": "Іспанія",
+      "uk": "Великобританія",
+      "netherlands": "Нідерланди",
+      "belgium": "Бельгія"
+    }
+  },
+  "labels": {
+    "list": "Ярлик",
+    "create": "Створити ярлик",
+    "edit": "Редагувати ярлик",
+    "name": "Найменування ярлика",
+    "none": "Для цієї категорії немає ярликів."
+  },
+  "windows": {
+    "list": "Вікна",
+    "select": "Вибрати вікно",
+    "create": "Створити вікно",
+    "edit": "Редагувати вікно",
+    "create1": " вікно",
+    "label": "Ярлик",
+    "name": "Ярлик вікна",
+    "none": "Для цієї черги немає вікна.",
+    "error": "Помилка вікна.",
+    "hwid": "Hwid"
+  },
+  "designs": {
+    "list": "Дизайн",
+    "singleLabel": "Дизайн",
+    "pickForProduct": "Виберіть для яких дизайнів доступний продукт",
+    "pickForShop": "Виберіть дизайни доступні тільки в цьому магазині (не додавайте загальні дизайни!)",
+    "pick": "Виберіть дизайн",
+    "labels": {
+      "allDesigns": "Всі дизайни",
+      "d1": "Дизайн 1",
+      "d1dm": "Дизайн 1 Темний",
+      "d2": "Дизайн 2",
+      "d3": "Дизайн 3",
+      "d4": "Дизайн 4",
+      "d4dm": "Дизайн 4 Темний",
+      "all": "Всі"
+    },
+    "none": "Для цієї категорії немає дизайну."
+  },
+  "transition": {
+    "list": "Трансформації",
+    "view": "Подивитись трансформацію",
+    "create": "Створити трансформацію",
+    "edit": "Редагувати трансформацію",
+    "demo": "Демо",
+    "glsl": "Glsl",
+    "label": "Найменування трансформації",
+    "filters": {
+      "all": "Всі трансформації",
+      "published": "Опубліковані",
+      "unpublished": "Не опубліковані"
+    }
+  },
+  "options": {
+    "name": "Опції",
+    "select": "Виберіть опцію",
+    "default": "Значення за замовчуванням",
+    "none": "ø",
+    "nothingSelected": "Немає вибору",
+    "slideOptions": "Конкретні параметри для типу слайда",
+    "delete": "Видалити цю опцію",
+    "entities": {
+      "product": "Продукт",
+      "slide_image": "Слайд з зображенням",
+      "slide_product": "Слайд продукту",
+      "slideshow": "Екран",
+      "slide": "Слайд",
+      "all": "Всі"
+    },
+    "labels": {
+      "bg_photo": "Фонове зображення",
+      "theme_color": "Колір теми",
+      "bg_text_color": "Колір фону текста",
+      "table": "Зображення стола",
+      "left": "Зображення зліва",
+      "top_left": "Зображення в верхньому лівому кутку",
+      "top_right": "Зображення в верхньому правому куті",
+      "right": "Зображення справа",
+      "bottom": "Зображення внизу",
+      "text_color": "Колір тексту",
+      "show_queue_name": "Показати назву черги",
+      "queue_message": "Додати повідомлення в чергу",
+      "strike_through_price": "Перша ціна",
+      "show_discounted_percent": "Показати снижку в процентах",
+      "main_color": "Main color",
+      "title_uppercase": "Put the title in uppercase"
+    }
+  },
+  "offline": {
+    "title": "Додаток не в мережі",
+    "description": "Додаток в даний час не в мережі, це може бути пов'язано з тим, що ваше з'єднання не працює."
+  },
+  "navigation": {
+    "subscription": "Підписки",
+    "capability": "Можливості",
+    "category": "Категорії",
+    "slideshow": "Екрани",
+    "slideshowTabs": "Екрани:",
+    "product": "Слайди",
+    "products": "Слайди",
+    "tmateSession": "Tmate",
+    "shop": "Магазини",
+    "user": "Користувачі",
+    "error": "Помилки",
+    "design": "Дизайни",
+    "option": "Опції",
+    "event": "Події",
+    "queue": "Черги",
+    "transition": "Переходи",
+    "device": "Пристрої",
+    "LogOut": "Вийти",
+    "tmate": "tmate"
+  },
+  "error": {
+    "label": "Помилки",
+    "class": "Клас",
+    "route": "Маршрут",
+    "source": "Джерело",
+    "message": "Повідомлення",
+    "requiredField": "Це поле є обов`язковим для заповнення.",
+    "passwordLength": "Пароль повинен складатися не менше ніж з 7 символів.",
+    "emailUsed": "Ця пошта уже використовується",
+    "incorrectEmail": "Ваша пошта не вірна",
+    "translationExists": "Продукт уже має переклад на цю мову",
+    "filters": {
+      "all": "Всі",
+      "doctor": "Doctor",
+      "admin": "Admin",
+      "api": "API"
+    }
+  },
+  "tmate": {
+    "session": {
+      "label": "Tmate sessions",
+      "link": "Link to Tmate session"
+    }
+  },
+  "auth": {
+    "login": "Логін",
+    "loginTitle": "З'єднання",
+    "username": "Ім'я користувача",
+    "password": "Пароль",
+    "linkResetPassword": "Забув пароль",
+    "resetTitle": "Скинути пароль",
+    "backLink": "Повернутися на сторінку авторизації",
+    "invalidCredentials": "Невірний логін або пароль",
+    "email": "Електронна пошта"
+  },
+  "languages": {
+    "all": "All languages",
+    "en": "English",
+    "fr": "Français",
+    "ru": "Русский",
+    "uk": "Українська"
+  },
+  "currencies": {
+    "label": "Currency"
+  },
+  "role": {
+    "label": "Роль",
+    "creator_role": "Роль створив",
+    "all": "Всі ролі",
+    "ROLE_USER": "Користувач",
+    "ROLE_ADMIN": "Адміністратор",
+    "ROLE_PARTNER_TRANSITION": "Партнер (Трансформації)",
+    "ROLE_PARTNER_TRANSITION_USER": "Користувач (Трансформації)"
+  },
+  "ticketMessage": {
+    "name": "Послання",
+    "create": "Створити послання",
+    "list": "Послання",
+    "title": "Назва послання",
+    "text": "Текст послання",
+    "edit": "Змiнити послання",
+    "select": "Обрати послання"
+  }
+}

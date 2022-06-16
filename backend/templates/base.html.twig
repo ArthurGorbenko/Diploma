@@ -1,0 +1,15 @@
+{% set version = '1594038314465' %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex" />
+    <link href="{{ asset('dist/main.css') }}?{{ version }}" rel="stylesheet" />
+  </head>
+  <body class="{{ slideshow is defined ? slideshow.design }}{{ app.environment == 'dev' ? ' dev' }}">
+    {% block body %}
+
+    {% endblock %}
+    <script src="{{ asset('dist/main.js') }}?{{ version }}"></script>
+  </body>
+</html>

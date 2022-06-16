@@ -1,0 +1,33 @@
+.price
+  font-size 123 / .82
+  color white color-red
+  border 7 solid white
+  margin-bottom 30
+  border-radius 14
+  box-shadow 0 12 0 -5 rgba(black, .2)
+
+  &-wrapper
+    absolute top -50 right 32
+    display flex
+    flex-direction column
+    opacity 0
+    transition all .45s
+
+  &-detail
+    font-size 54
+    letter-spacing 0
+
+  &2
+    border-color color-red
+    color color-red white
+
+    .price-detail
+      color color-red
+
+.active
+  .price-wrapper
+    top 30
+    opacity 1
+
+  &.beforeEnd .price-wrapper
+    right -39%

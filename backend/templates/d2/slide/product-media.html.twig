@@ -1,0 +1,23 @@
+{% if data.product.media_type == 'video' %}
+  <div class="bg">
+    <video src="/uploads/{{ data.product.media_link }}" loop muted></video>
+  </div>
+{% elseif data.product.media_type == 'image' %}
+  {% if data.options.theme_color %}
+    {% set styleBg = ['background-image:url(/dist/medias/design/d2/theme_color/bg-', data.options.theme_color, '.jpg)']|join %}
+  {% endif %}
+  {% if data.options.bg_photo %}
+    {% set styleBg = ['background-image:url(/dist/medias/design/d2/bg_photo/', data.options.bg_photo, ')']|join %}
+  {% endif %}
+
+  {% if data.options.table %}
+    {% set styleTable = ['background-image:url(/dist/medias/design/d2/table/', data.options.table, ')']|join %}
+  {% endif %}
+
+  <div class="board" style="animation-duration:{{ slideshow.speed - 0.4 }}s">
+    <img class="media" src="/uploads/{{ data.product.media_link }}" />
+  </div>
+
+  <div class="bg-theme{{ data.options.bg_photo ? ' noanim' }}" style="{{ styleBg }}"></div>
+  <div class="table" style="{{ styleTable }}"></div>
+{% endif %}

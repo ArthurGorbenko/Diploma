@@ -1,0 +1,13 @@
+# supported browsers (cf. http://browserl.ist for detailed list)
+# examples: since 2016, since 2016-09, ie 9, not ie 8
+
+# default: last 2 versions of each browser
+# + every browser with more than 1% coverage in France
+# + Firefox Extended Support Release
+
+last 2 versions
+#> 1% in FR
+#Firefox ESR
+#ie 11
+not ie > 0
+not IE_Mob 11

@@ -1,0 +1,7 @@
+{% if data.labels is not empty %}
+  <div class="labels">
+    {% for label in data.labels %}
+      <img src="/uploads/{{ label.image_link }}" />
+    {% endfor %}
+  </div>
+{% endif %}
