@@ -22,8 +22,6 @@
 
 - `bin/console doctrine:migrations:migrate`
 
-- `bin/console app:contrib`
-
 - `symfony server:start`
 
 ## Root user credentials (dev)
@@ -32,13 +30,6 @@
 
 - license: `root_license`
 
-## Updating Instructions
-
-- `git pull`
-
-- `bin/console doctrine:migrations:migrate`
-
-- `bin/console app:contrib`
 
 ## The Slideshow
 
